@@ -1,10 +1,10 @@
-export type QuestionType = 'boolean' | 'input' | 'checkbox';
+export type QuestionType = "boolean" | "input" | "checkbox";
 
 export interface Question {
   id?: number;
   text: string;
   type: QuestionType;
-  options: string[]; 
+  options: string[];
 }
 
 export interface Quiz {
@@ -14,4 +14,4 @@ export interface Quiz {
   questions?: Question[];
 }
 
-export const API_URL = 'http://localhost:3000';
+export const API_URL = "http://localhost:3000";
